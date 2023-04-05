@@ -30,7 +30,7 @@
 .bottom-box {
   padding-left: 1.375rem;
   width: 3.125rem;
-  height: 3.125rem;
+  height: 2.8125rem;
 }
 .bg {
   background-color: var(--bgColor);
@@ -40,7 +40,7 @@
   position: fixed;
   z-index: 1500;
   width: 100%;
-  height: 3.75rem;
+  height: 3.4375rem;
   bottom: 0;
   background-color: white;
 }

@@ -7,7 +7,7 @@
 			<text class=" position-absolute  h4 mx-2 right-0 mt-1">帮助</text>
 		</view>
 
-		<!--主题内容  -->
+		<!--主体内容  -->
 		<view class="border-bottom my-5 mx-1">
 			<view class="flex px-2 pt-2 mb-sm bg-white ">
 				<view class="flex-1  pb-1">
@@ -66,15 +66,15 @@
 		<view class="flex f-around bottom ">
 			<view class="bottom-box">
 				<image src="/static/images/index.png" class="bottom-img"></image>
-				<view class="font-sm text-muted mt-1">班课</view>
+				<view class="font-sm text-muted ">班课</view>
 			</view>
 			<view class="bottom-box">
 				<image src="/static/images//find-selected.png" class="bottom-img"></image>
-				<view class="font-sm text-info mt-1">发现</view>
+				<view class="font-sm text-info ">发现</view>
 			</view>
 			<view class="bottom-box">
 				<image src="/static/images/my.png" class="bottom-img"></image>
-				<view class="font-sm text-muted mt-1">我的</view>
+				<view class="font-sm text-muted ">我的</view>
 			</view>
 		</view>
 	</view>
@@ -102,7 +102,7 @@
 	.bottom-box {
 		padding-left: 44rpx;
 		width: 100rpx;
-		height: 100rpx;
+		height: 90rpx;
 	}
 
 	.bg {
@@ -114,7 +114,7 @@
 		position: fixed;
 		z-index: 1500;
 		width: 100%;
-		height: 120rpx;
+		height: 110rpx;
 		bottom: 0;
 		background-color: white;
 	}

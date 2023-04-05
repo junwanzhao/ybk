@@ -847,7 +847,7 @@ body {
 	border-style: solid;
 	border-color: var(--borderColor);
 }
-.borfer-top {
+.border-top {
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: var(--borderColor);

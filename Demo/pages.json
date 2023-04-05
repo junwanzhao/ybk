@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "custom"
+				"navigationBarTitleText": "班课"
 			}
 		}
 	    ,{
@@ -38,7 +38,7 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "云班课",
 		"navigationBarBackgroundColor": "#1296ab",
-		"backgroundColor": "#1296ab"
+		"backgroundColor": "#F4F4F4"
 	},
 	"uniIdRouter": {},
 	"condition" : { //模式配置，仅开发期间生效

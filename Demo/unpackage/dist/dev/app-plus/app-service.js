@@ -62,7 +62,7 @@ if (uni.restoreGlobal) {
   function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view");
   }
-  const ComponentsUniStatusBarUniStatusBar = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$2], ["__file", "D:/HBuilderProjects/Demo/components/uni-status-bar/uni-status-bar.vue"]]);
+  const ComponentsUniStatusBarUniStatusBar = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$2], ["__file", "D:/HBuilderProjects/ybk/Demo/components/uni-status-bar/uni-status-bar.vue"]]);
   const _sfc_main$3 = {
     __name: "index",
     setup(__props) {
@@ -271,21 +271,21 @@ if (uni.restoreGlobal) {
                   src: "/static/images/index-selected.png",
                   class: "bottom-img"
                 }),
-                vue.createElementVNode("view", { class: "font-sm text-info mt-1" }, "班课")
+                vue.createElementVNode("view", { class: "font-sm text-info" }, "班课")
               ]),
               vue.createElementVNode("view", { class: "bottom-box" }, [
                 vue.createElementVNode("image", {
                   src: "/static/images/find.png",
                   class: "bottom-img"
                 }),
-                vue.createElementVNode("view", { class: "font-sm text-muted mt-1" }, "发现")
+                vue.createElementVNode("view", { class: "font-sm text-muted" }, "发现")
               ]),
               vue.createElementVNode("view", { class: "bottom-box" }, [
                 vue.createElementVNode("image", {
                   src: "/static/images/my.png",
                   class: "bottom-img"
                 }),
-                vue.createElementVNode("view", { class: "font-sm text-muted mt-1" }, "我的")
+                vue.createElementVNode("view", { class: "font-sm text-muted" }, "我的")
               ])
             ])
           ],
@@ -295,7 +295,7 @@ if (uni.restoreGlobal) {
       };
     }
   };
-  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-1cf27b2a"], ["__file", "D:/HBuilderProjects/Demo/pages/index/index.vue"]]);
+  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-1cf27b2a"], ["__file", "D:/HBuilderProjects/ybk/Demo/pages/index/index.vue"]]);
   const _sfc_main$2 = {
     data() {
       return {};
@@ -309,7 +309,7 @@ if (uni.restoreGlobal) {
         vue.createElementVNode("text", { class: "position-absolute h3 ml" }, "发现"),
         vue.createElementVNode("text", { class: "position-absolute h4 mx-2 right-0 mt-1" }, "帮助")
       ]),
-      vue.createCommentVNode("主题内容  "),
+      vue.createCommentVNode("主体内容  "),
       vue.createElementVNode("view", { class: "border-bottom my-5 mx-1" }, [
         vue.createElementVNode("view", { class: "flex px-2 pt-2 mb-sm bg-white" }, [
           vue.createElementVNode("view", { class: "flex-1 pb-1" }, [
@@ -377,26 +377,26 @@ if (uni.restoreGlobal) {
             src: "/static/images/index.png",
             class: "bottom-img"
           }),
-          vue.createElementVNode("view", { class: "font-sm text-muted mt-1" }, "班课")
+          vue.createElementVNode("view", { class: "font-sm text-muted" }, "班课")
         ]),
         vue.createElementVNode("view", { class: "bottom-box" }, [
           vue.createElementVNode("image", {
             src: "/static/images//find-selected.png",
             class: "bottom-img"
           }),
-          vue.createElementVNode("view", { class: "font-sm text-info mt-1" }, "发现")
+          vue.createElementVNode("view", { class: "font-sm text-info" }, "发现")
         ]),
         vue.createElementVNode("view", { class: "bottom-box" }, [
           vue.createElementVNode("image", {
             src: "/static/images/my.png",
             class: "bottom-img"
           }),
-          vue.createElementVNode("view", { class: "font-sm text-muted mt-1" }, "我的")
+          vue.createElementVNode("view", { class: "font-sm text-muted" }, "我的")
         ])
       ])
     ]);
   }
-  const PagesFindFind = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__file", "D:/HBuilderProjects/Demo/pages/find/find.vue"]]);
+  const PagesFindFind = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__file", "D:/HBuilderProjects/ybk/Demo/pages/find/find.vue"]]);
   const _sfc_main$1 = {
     data() {
       return {};
@@ -405,12 +405,162 @@ if (uni.restoreGlobal) {
   };
   function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_status_bar = resolveEasycom(vue.resolveDynamicComponent("uni-status-bar"), ComponentsUniStatusBarUniStatusBar);
-    return vue.openBlock(), vue.createElementBlock("view", null, [
-      vue.createCommentVNode(" 自定义状态栏 "),
-      vue.createVNode(_component_uni_status_bar)
-    ]);
+    return vue.openBlock(), vue.createElementBlock(
+      vue.Fragment,
+      null,
+      [
+        vue.createElementVNode("view", null, [
+          vue.createCommentVNode(" 自定义状态栏 "),
+          vue.createVNode(_component_uni_status_bar)
+        ]),
+        vue.createCommentVNode("导航栏"),
+        vue.createElementVNode("view", { class: "pb-1 bg-light position-relative top" }, [
+          vue.createElementVNode("text", { class: "position-absolute h3 ml" }, "我的"),
+          vue.createElementVNode("text", { class: "position-absolute font-md mx-2 right-0 mt-3" }, "帮助")
+        ]),
+        vue.createCommentVNode("头像姓名"),
+        vue.createElementVNode("view", { class: "flex px-2 pt-2 mb-sm bg-white" }, [
+          vue.createElementVNode("view", { class: "flex-1 pb-1" }, [
+            vue.createElementVNode("image", {
+              src: "/static/images/touxiang.jpg",
+              class: "image-1"
+            })
+          ]),
+          vue.createElementVNode("view", { class: "flex-4 font-name px-2 mb-5" }, [
+            vue.createElementVNode("text", null, "朱绘羽")
+          ]),
+          vue.createElementVNode("view", { class: "flex-1 text-right pt-5 mt-2" }, [
+            vue.createElementVNode("text", { class: "iconfont icon-right text-light-muted font-weight-bold" })
+          ])
+        ]),
+        vue.createCommentVNode(" 属性值 "),
+        vue.createElementVNode("view", { class: "flex border-bottom border-top bg-white mb-5" }, [
+          vue.createElementVNode("view", { class: "box1 border-right py-1 px-1 font-weight-bold font" }, [
+            vue.createElementVNode("text", { class: "text-info font-md" }, "10"),
+            vue.createElementVNode("view", { class: "pt-1 text-light-muted" }, " 经验值 ")
+          ]),
+          vue.createElementVNode("view", { class: "box1 border-right py-1 px-1 font-weight-bold font" }, [
+            vue.createElementVNode("text", { class: "text-info font-md" }, "0"),
+            vue.createElementVNode("view", { class: "pt-1 text-light-muted" }, " 魅力值 ")
+          ]),
+          vue.createElementVNode("view", { class: "box1 border-right py-1 px-1 font-weight-bold font" }, [
+            vue.createElementVNode("text", { class: "text-info font-md" }, "0"),
+            vue.createElementVNode("view", { class: "pt-1 text-light-muted" }, " 蓝豆 ")
+          ]),
+          vue.createElementVNode("view", { class: "box1 py-1 px-1 font-weight-bold font" }, [
+            vue.createElementVNode("text", { class: "text-info font-md" }, "0"),
+            vue.createElementVNode("view", { class: "pt-1 text-light-muted" }, " 心意 ")
+          ])
+        ]),
+        vue.createCommentVNode(" 卡片 "),
+        vue.createElementVNode("view", { class: "f-around bg-white py-2 pl-1 border-bottom border-top mb-5" }, [
+          vue.createElementVNode("view", null, [
+            vue.createElementVNode("image", {
+              src: "/static/images/wdkj.jpg",
+              class: "image-2"
+            }),
+            vue.createElementVNode("view", { class: "font-card" }, "我的空间")
+          ]),
+          vue.createElementVNode("view", null, [
+            vue.createElementVNode("image", {
+              src: "/static/images/wdsc.jpg",
+              class: "image-2"
+            }),
+            vue.createElementVNode("view", { class: "font-card" }, "我的收藏")
+          ]),
+          vue.createElementVNode("view", null, [
+            vue.createElementVNode("image", {
+              src: "/static/images/xykp.jpg",
+              class: "image-2"
+            }),
+            vue.createElementVNode("view", { class: "font-card" }, "心意卡片")
+          ]),
+          vue.createElementVNode("view", null, [
+            vue.createElementVNode("image", {
+              src: "/static/images/rwzx.jpg",
+              class: "image-2"
+            }),
+            vue.createElementVNode("view", { class: "font-card" }, "任务中心")
+          ]),
+          vue.createElementVNode("view", null, [
+            vue.createElementVNode("image", {
+              src: "/static/images/xtxx.jpg",
+              class: "image-2"
+            }),
+            vue.createElementVNode("view", { class: "font-card" }, "系统消息")
+          ])
+        ]),
+        vue.createCommentVNode(" 主体内容 "),
+        vue.createElementVNode("view", { class: "" }, [
+          vue.createElementVNode("view", { class: "bg-white mb-5 px-2 py-2 flex f-between border-bottom border-top" }, [
+            vue.createElementVNode("view", { class: "flex-2 font-1" }, " 我的勋章 "),
+            vue.createElementVNode("view", { class: "flex-4 text-light-muted font-weight-bold text-right font-md" }, " 快来获得第一枚勋章 "),
+            vue.createElementVNode("view", { class: "text-right pl-1 pt-1" }, [
+              vue.createElementVNode("text", { class: "iconfont icon-right text-light-muted font-weight-bold" })
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "bg-white px-2 py-2 flex f-between border-bottom border-top" }, [
+            vue.createElementVNode("view", { class: "flex-2 font-1" }, " 文件暂存区 "),
+            vue.createElementVNode("view", { class: "text-right pl-1 pt-1" }, [
+              vue.createElementVNode("text", { class: "iconfont icon-right text-light-muted font-weight-bold" })
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "bg-white px-2 py-2 flex f-between border-bottom border-top" }, [
+            vue.createElementVNode("view", { class: "flex-2 font-1" }, " 分享给朋友 "),
+            vue.createElementVNode("view", { class: "flex-4 text-light-muted font-weight-bold text-right font-md" }, " 累计分享成功0次 "),
+            vue.createElementVNode("view", { class: "text-right pl-1 pt-1" }, [
+              vue.createElementVNode("text", { class: "iconfont icon-right text-light-muted font-weight-bold" })
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "bg-white px-2 py-2 flex f-between border-bottom border-top" }, [
+            vue.createElementVNode("view", { class: "flex-2 font-1" }, " 用户协议 "),
+            vue.createElementVNode("view", { class: "text-right pl-1 pt-1" }, [
+              vue.createElementVNode("text", { class: "iconfont icon-right text-light-muted font-weight-bold" })
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "bg-white px-2 py-2 flex f-between border-bottom border-top" }, [
+            vue.createElementVNode("view", { class: "flex-2 font-1" }, " 隐私政策 "),
+            vue.createElementVNode("view", { class: "text-right pl-1 pt-1" }, [
+              vue.createElementVNode("text", { class: "iconfont icon-right text-light-muted font-weight-bold" })
+            ])
+          ]),
+          vue.createElementVNode("view", { class: "bg-white px-2 py-2 flex f-between border-bottom border-top" }, [
+            vue.createElementVNode("view", { class: "flex-2 font-1" }, " 设置 "),
+            vue.createElementVNode("view", { class: "text-right pl-1 pt-1" }, [
+              vue.createElementVNode("text", { class: "iconfont icon-right text-light-muted font-weight-bold" })
+            ])
+          ])
+        ]),
+        vue.createCommentVNode(" 底部导航栏 "),
+        vue.createElementVNode("view", { class: "flex f-around bottom" }, [
+          vue.createElementVNode("view", { class: "bottom-box" }, [
+            vue.createElementVNode("image", {
+              src: "/static/images/index.png",
+              class: "bottom-img"
+            }),
+            vue.createElementVNode("view", { class: "font-sm text-muted" }, "班课")
+          ]),
+          vue.createElementVNode("view", { class: "bottom-box" }, [
+            vue.createElementVNode("image", {
+              src: "/static/images/find.png",
+              class: "bottom-img"
+            }),
+            vue.createElementVNode("view", { class: "font-sm text-muted" }, "发现")
+          ]),
+          vue.createElementVNode("view", { class: "bottom-box" }, [
+            vue.createElementVNode("image", {
+              src: "/static/images/my-selected.png",
+              class: "bottom-img"
+            }),
+            vue.createElementVNode("view", { class: "font-sm text-info" }, "我的")
+          ])
+        ])
+      ],
+      64
+      /* STABLE_FRAGMENT */
+    );
   }
-  const PagesMyMy = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "D:/HBuilderProjects/Demo/pages/my/my.vue"]]);
+  const PagesMyMy = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "D:/HBuilderProjects/ybk/Demo/pages/my/my.vue"]]);
   __definePage("pages/index/index", PagesIndexIndex);
   __definePage("components/uni-status-bar/uni-status-bar", ComponentsUniStatusBarUniStatusBar);
   __definePage("pages/find/find", PagesFindFind);
@@ -426,7 +576,7 @@ if (uni.restoreGlobal) {
       formatAppLog("log", "at App.vue:10", "App Hide");
     }
   };
-  const App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "D:/HBuilderProjects/Demo/App.vue"]]);
+  const App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "D:/HBuilderProjects/ybk/Demo/App.vue"]]);
   function createApp() {
     const app = vue.createVueApp(App);
     return {

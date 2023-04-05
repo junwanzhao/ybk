@@ -123,15 +123,15 @@
 	<view class="flex f-around bottom ">
 		<view class="bottom-box">
 			<image src="/static/images/index-selected.png" class="bottom-img"></image>
-			<view class="font-sm text-info mt-1">班课</view>
+			<view class="font-sm text-info ">班课</view>
 		</view>
 		<view class="bottom-box">
 			<image src="/static/images/find.png" class="bottom-img"></image>
-			<view class="font-sm text-muted mt-1">发现</view>
+			<view class="font-sm text-muted ">发现</view>
 		</view>
 		<view class="bottom-box">
 			<image src="/static/images/my.png" class="bottom-img"></image>
-			<view class="font-sm text-muted mt-1">我的</view>
+			<view class="font-sm text-muted ">我的</view>
 		</view>
 	</view>
 </template>
@@ -287,7 +287,7 @@
 	.bottom-box {
 		padding-left: 44rpx;
 		width: 100rpx;
-		height: 100rpx;
+		height: 90rpx;
 	}
 
 	.bg {
@@ -299,7 +299,7 @@
 		position: fixed;
 		z-index: 1500;
 		width: 100%;
-		height: 120rpx;
+		height: 110rpx;
 		bottom: 0;
 		background-color: white;
 	}
