@@ -53,11 +53,11 @@
 
 	<!-- 卡片 -->
 	<view class="f-around bg-white py-2 pl-1 border-bottom border-top mb-5 ">
-		<view >
+		<view>
 			<image src="/static/images/wdkj.jpg" class="image-2"></image>
 			<view class="font-card ">我的空间</view>
 		</view>
-		<view >
+		<view>
 			<image src="/static/images/wdsc.jpg" class="image-2"></image>
 			<view class="font-card">我的收藏</view>
 		</view>
@@ -65,7 +65,7 @@
 			<image src="/static/images/xykp.jpg" class="image-2"></image>
 			<view class="font-card">心意卡片</view>
 		</view>
-		<view >
+		<view>
 			<image src="/static/images/rwzx.jpg" class="image-2"></image>
 			<view class="font-card">任务中心</view>
 		</view>
@@ -76,7 +76,7 @@
 	</view>
 
 	<!-- 主体内容 -->
-	<view class="">
+	<view>
 		<view class="bg-white mb-5 px-2 py-2 flex f-between border-bottom border-top">
 			<view class="flex-2 font-1 ">
 				我的勋章
@@ -88,8 +88,8 @@
 				<text class="iconfont icon-right text-light-muted font-weight-bold"></text>
 			</view>
 		</view>
-		
-		<view class="bg-white px-2 py-2 flex f-between border-bottom border-top">
+
+		<view class="bg-white px-2 py-2 flex f-between  border-top">
 			<view class="flex-2 font-1 ">
 				文件暂存区
 			</view>
@@ -97,8 +97,8 @@
 				<text class="iconfont icon-right text-light-muted font-weight-bold"></text>
 			</view>
 		</view>
-		
-		<view class="bg-white px-2 py-2 flex f-between border-bottom border-top">
+
+		<view class="bg-white px-2 py-2 flex f-between border-top">
 			<view class="flex-2 font-1 ">
 				分享给朋友
 			</view>
@@ -109,7 +109,7 @@
 				<text class="iconfont icon-right text-light-muted font-weight-bold"></text>
 			</view>
 		</view>
-		<view class="bg-white px-2 py-2 flex f-between border-bottom border-top">
+		<view class="bg-white px-2 py-2 flex f-between border-top">
 			<view class="flex-2 font-1 ">
 				用户协议
 			</view>
@@ -117,7 +117,7 @@
 				<text class="iconfont icon-right text-light-muted font-weight-bold"></text>
 			</view>
 		</view>
-		<view class="bg-white px-2 py-2 flex f-between border-bottom border-top">
+		<view class="bg-white px-2 py-2 flex f-between border-top">
 			<view class="flex-2 font-1 ">
 				隐私政策
 			</view>
@@ -132,24 +132,6 @@
 			<view class="text-right pl-1 pt-1">
 				<text class="iconfont icon-right text-light-muted font-weight-bold"></text>
 			</view>
-		</view>
-	</view>
-
-
-
-	<!-- 底部导航栏 -->
-	<view class="flex f-around bottom ">
-		<view class="bottom-box">
-			<image src="/static/images/index.png" class="bottom-img"></image>
-			<view class="font-sm text-muted ">班课</view>
-		</view>
-		<view class="bottom-box">
-			<image src="/static/images/find.png" class="bottom-img"></image>
-			<view class="font-sm text-muted ">发现</view>
-		</view>
-		<view class="bottom-box">
-			<image src="/static/images/my-selected.png" class="bottom-img"></image>
-			<view class="font-sm text-info ">我的</view>
 		</view>
 	</view>
 </template>
@@ -168,31 +150,6 @@
 </script>
 
 <style lang="scss">
-	.bottom-img {
-		height: 50rpx;
-		width: 50rpx;
-	}
-
-	.bottom-box {
-		padding-left: 44rpx;
-		width: 100rpx;
-		height: 90rpx;
-	}
-
-	.bg {
-		background-color: var(--bgColor);
-		height: 100rpx;
-	}
-
-	.bottom {
-		position: fixed;
-		z-index: 1500;
-		width: 100%;
-		height: 110rpx;
-		bottom: 0;
-		background-color: white;
-	}
-
 	.ml {
 		margin-left: 330rpx;
 	}
@@ -248,9 +205,10 @@
 	.font-card {
 		color: #424242;
 		font-size: 28rpx;
-		font-weight: 530;	
+		font-weight: 530;
 	}
-	.font-1{
+
+	.font-1 {
 		color: #424242;
 		font-size: 35rpx;
 		font-weight: 510;

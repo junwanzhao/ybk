@@ -1,6 +1,5 @@
 <template>
 	<view>
-
 		<!--导航栏-->
 		<view class=" pb-1 bg-light position-relative top ">
 			<text class="position-absolute h3 ml ">发现</text>
@@ -8,8 +7,8 @@
 		</view>
 
 		<!--主体内容  -->
-		<view class="border-bottom my-5 mx-1">
-			<view class="flex px-2 pt-2 mb-sm bg-white ">
+		<view class="border-bottom  border-top  my-5 mx-1">
+			<view class="flex px-2 pt-2 mb-sm bg-white">
 				<view class="flex-1  pb-1">
 					<image src="/static/images/ClassCircle.jpg" class="image-r"></image>
 				</view>
@@ -34,7 +33,7 @@
 
 		</view>
 
-		<view class="border-bottom mb-5 mx-1">
+		<view class="border-bottom border-top mb-5 mx-1 ">
 			<view class="flex px-2 pt-2  mb-sm bg-white ">
 				<view class="flex-1  pb-1">
 					<image src="/static/images/yunjiaocai.jpg" class="image-r"></image>
@@ -59,25 +58,12 @@
 			</view>
 
 		</view>
-
-
-
-		<!-- 底部导航栏 -->
-		<view class="flex f-around bottom ">
-			<view class="bottom-box">
-				<image src="/static/images/index.png" class="bottom-img"></image>
-				<view class="font-sm text-muted ">班课</view>
-			</view>
-			<view class="bottom-box">
-				<image src="/static/images//find-selected.png" class="bottom-img"></image>
-				<view class="font-sm text-info ">发现</view>
-			</view>
-			<view class="bottom-box">
-				<image src="/static/images/my.png" class="bottom-img"></image>
-				<view class="font-sm text-muted ">我的</view>
-			</view>
-		</view>
 	</view>
+
+
+
+
+
 </template>
 
 <script>
@@ -94,31 +80,6 @@
 </script>
 
 <style lang="scss">
-	.bottom-img {
-		height: 50rpx;
-		width: 50rpx;
-	}
-
-	.bottom-box {
-		padding-left: 44rpx;
-		width: 100rpx;
-		height: 90rpx;
-	}
-
-	.bg {
-		background-color: var(--bgColor);
-		height: 100rpx;
-	}
-
-	.bottom {
-		position: fixed;
-		z-index: 1500;
-		width: 100%;
-		height: 110rpx;
-		bottom: 0;
-		background-color: white;
-	}
-
 	.ml {
 		margin-left: 330rpx;
 	}
@@ -131,7 +92,6 @@
 	.image-r {
 		width: 60rpx;
 		height: 60rpx;
-		// background-color: var(--info);
 	}
 
 	.mb-sm {

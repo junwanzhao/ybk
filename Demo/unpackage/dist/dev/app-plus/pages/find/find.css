@@ -23,27 +23,6 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.bottom-img {
-  height: 1.5625rem;
-  width: 1.5625rem;
-}
-.bottom-box {
-  padding-left: 1.375rem;
-  width: 3.125rem;
-  height: 2.8125rem;
-}
-.bg {
-  background-color: var(--bgColor);
-  height: 3.125rem;
-}
-.bottom {
-  position: fixed;
-  z-index: 1500;
-  width: 100%;
-  height: 3.4375rem;
-  bottom: 0;
-  background-color: white;
-}
 .ml {
   margin-left: 10.3125rem;
 }

@@ -971,6 +971,9 @@
 .bg-hover-light {
 	background-color: var(--lightHover);
 }
+.bg-lightMuted{
+	background-color: var(--lightMuted);
+}
 
 .bg-dark {
 	background-color: var(--dark);
@@ -982,6 +985,9 @@
 
 .bg-white {
 	background-color: var(--white);
+}
+.bg-lightWhite {
+	background-color: var(--lightWhite);
 }
 
 .bg-transparent {

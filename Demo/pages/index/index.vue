@@ -116,98 +116,31 @@
 		</view>
 	</view>
 
-
-	<!-- 底部导航栏 -->
-	<view class="bg"></view>
-
-	<view class="flex f-around bottom ">
-		<view class="bottom-box">
-			<image src="/static/images/index-selected.png" class="bottom-img"></image>
-			<view class="font-sm text-info ">班课</view>
-		</view>
-		<view class="bottom-box">
-			<image src="/static/images/find.png" class="bottom-img"></image>
-			<view class="font-sm text-muted ">发现</view>
-		</view>
-		<view class="bottom-box">
-			<image src="/static/images/my.png" class="bottom-img"></image>
-			<view class="font-sm text-muted ">我的</view>
-		</view>
-	</view>
 </template>
 
 <script setup>
 	import {
 		ref,
-		reactive
-	} from 'vue'
+		reactive,
+		onMounted
+	} from "vue"
 
 	import {
 		onLoad,
 		onReady
 	} from "@dcloudio/uni-app";
-
-	const courses = reactive([{
-			courseId: 1,
-			courseClass: "软件2242 Web2班",
-			courseNo: "2942577",
-			courseName: "后端工程开发",
-			courseCover: "/static/images/SpringBoot.jpg",
-			courseTeacher: {
-				name: "许莫淇",
-				avatar: "/static/images/mqxu.jpg",
-			},
-			semester: "2022-2-23-2",
-			finished: false,
-			show: false,
-		},
-		{
-			courseId: 2,
-			courseClass: "软件2242 Web2班",
-			courseNo: "9488275",
-			courseName: "前端工程开发",
-			courseCover: "/static/images/Vue.png",
-			courseTeacher: {
-				name: "许莫淇",
-				avatar: "/static/images/mqxu.jpg",
-			},
-			semester: "2022-2-23-2",
-			finished: false,
-			show: false,
-		},
-		{
-			courseId: 3,
-			courseClass: "软件2242 Web2班",
-			courseNo: "8175074",
-			courseName: "Web应用开发",
-			courseCover: "static/images/Web.png",
-			courseTeacher: {
-				name: "许莫淇",
-				avatar: "/static/images/mqxu.jpg",
-			},
-			semester: "2022-2-23-2",
-			finished: false,
-			show: false,
-		},
-		{
-			courseId: 4,
-			courseClass: "软件2216",
-			courseNo: "2942577",
-			courseName: "Java程序设计",
-			courseCover: "/static/images/Java.jpg",
-			courseTeacher: {
-				name: "许莫淇",
-				avatar: "/static/images/mqxu.jpg",
-			},
-			semester: "2022-2-23-2",
-			finished: false,
-			show: false,
-		}
-	])
+	import {
+		courseList
+	} from '@/mock/data.js'
+	const courses = reactive([...courseList]);
 
 	let navBarHeight = ref(Number) //导航栏高度
 	let screenWidth = ref(Number) //设备屏幕宽度
 	let buttonWidth = ref(Number) //小程序胶囊宽度
+
+	onMounted(() => {
+		courses.list = courseList
+	})
 
 	// #ifdef APP-PLUS
 	onReady(() => {
@@ -277,30 +210,5 @@
 		width: 110px;
 		height: 110rpx;
 		border-radius: var(--radius);
-	}
-
-	.bottom-img {
-		height: 50rpx;
-		width: 50rpx;
-	}
-
-	.bottom-box {
-		padding-left: 44rpx;
-		width: 100rpx;
-		height: 90rpx;
-	}
-
-	.bg {
-		background-color: var(--bgColor);
-		height: 100rpx;
-	}
-
-	.bottom {
-		position: fixed;
-		z-index: 1500;
-		width: 100%;
-		height: 110rpx;
-		bottom: 0;
-		background-color: white;
 	}
 </style>

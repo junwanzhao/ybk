@@ -20,6 +20,35 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cha:before {
+  content: "\e612";
+}
+
+
+.icon-daosanjiao:before {
+  content: "\e62a";
+}
+
+.icon-shoucang:before {
+  content: "\e667";
+}
+
+.icon-pinglun:before {
+  content: "\e6ad";
+}
+
+.icon-yinyong:before {
+  content: "\eb6f";
+}
+
+.icon-dianzan1:before {
+  content: "\e613";
+}
+
+.icon-ziyuan:before {
+  content: "\e610";
+}
+
 .icon-right:before {
 	content: "\e7eb";
 }

@@ -33,6 +33,17 @@
             }
             
         }
+		,{
+            "path" : "pages/class-circle/class-circle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "蓝墨圈",
+                "enablePullDownRefresh": false,
+				"backgroundColor": "#2d2d2d"
+            }
+            
+        }
+		
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -50,5 +61,46 @@
 				"query": "" //启动参数，在页面的onLoad函数里面得到
 			}
 		]
-	}
+	},
+	
+	"tabBar": {
+			//文字未选中颜色
+			"color": "#6c757d",
+			//选中颜色
+			"selectedColor": "#20cef0",
+			//边框颜色
+			"borderStyle": "black",
+			// 背景颜色
+			"backgroundColor": "#fff",
+			// 配置tab页面
+			"list": [{
+				// 对应页面地址
+				"pagePath": "pages/index/index",
+				// 显示文字
+				"text": "班课",
+				// 图标选中和未选中
+				"iconPath": "/static/images/index.png",
+				"selectedIconPath": "/static/images/index-selected.png"
+			}, {
+				// 对应页面地址
+				"pagePath": "pages/find/find",
+				// 显示文字
+				"text": "发现",
+				"iconPath": "/static/images/find.png",
+				"selectedIconPath": "/static/images/find-selected.png"
+			}, {
+				// 对应页面地址
+				"pagePath": "pages/my/my",
+				// 显示文字
+				"text": "我的",
+				"iconPath": "/static/images/my.png",
+				"selectedIconPath": "/static/images/my-selected.png"
+			}]
+			
+		}
+	
+	
+	
+	
+	
 }
